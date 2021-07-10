@@ -1,0 +1,19 @@
+table {
+  margin: 10px;
+}
+.box {
+  border: 1px solid #ccc;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+td {
+  width: 20px;
+  height: 20px;
+}
+
+.unvisited {
+  background-color: red;
+}
