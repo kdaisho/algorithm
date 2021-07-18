@@ -24,6 +24,23 @@ function fibonacci(n) {
  * 10: 55
  */
 
-const result = fibonacci(7)
+const result = fibonacci(5)
 
-console.log(result) // 13
+console.log(result) // 5
+
+/**
+ *                                fibonacci(5)
+ *                                     |
+ *                            ---------|----------
+ *                          /                      \
+ *                        /                          \
+ *                 fibonacci(4)                    fibonacci(3)
+ *                /           \                   /           \
+ *              /               \               /               \
+ *        fibonacci(3)        fibonacci(2)   fibonacci(2)   fibonacci(1)
+ *        /         \              |              |              |
+ *      /             \            1              1              1
+ * fibonacci(2)   fibonacci(1)
+ *     |               |
+ *     1               1
+ */
