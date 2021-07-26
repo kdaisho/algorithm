@@ -1,3 +1,4 @@
+let count = 0
 function quickSort(nums) {
   // base case, array of length 0 or 1
   if (nums.length <= 1) {
@@ -17,7 +18,7 @@ function quickSort(nums) {
       right.push(num)
     }
   }
-
+  count++
   // call quickSort on left and right arrays
   return quickSort(left).concat(pivot, quickSort(right))
   // return [...quickSort(left), pivot, ...quickSort(right)]
