@@ -4,7 +4,7 @@
  * e.g. place 0 of "2345" is 2, place 1 of "2345" is 3
  * @param {Number} longestNumber largest digit (keta)
  * e.g. ["2345", "589", "12"] => 4 (greatest length among items, in this case "2345")
- * @returns {Number}
+ * @returns {Number} 5 if number === 2345 & place === 3 & longestNumber === 4
  */
 function getDigit(number, place, longestNumber) {
   const string = number.toString()
