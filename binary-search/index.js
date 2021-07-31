@@ -7,13 +7,13 @@
 function binarySearch(id, array) {
   let min = 0
   let max = array.length - 1
-  let index
-  let mid
 
+  /**
+   * don't know why but declaring const within while loop seems to be valid
+   */
   while (min <= max) {
-    console.count()
-    index = Math.floor((min + max) / 2)
-    mid = array[index]
+    const index = Math.floor((min + max) / 2)
+    const mid = array[index]
 
     if (mid.id < id) {
       min = index + 1
@@ -44,4 +44,4 @@ const list = [
   { id: 24, name: 'Ben' },
 ]
 
-console.log(binarySearch(23, list)) // { id: 23, name: 'Brian' }
+console.log(binarySearch(15, list)) // { id: 15, name: 'Aysegul' }
