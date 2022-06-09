@@ -21,7 +21,7 @@ function removeDuplicates(nums) {
   const seen = new Set()
   let _i = 0
 
-  nums.forEach((n, i) => {
+  nums.forEach(n => {
     if (!seen.has(n)) {
       nums[_i] = n
       _i++
