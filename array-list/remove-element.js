@@ -34,7 +34,7 @@ const val = 2
 console.log(removeElement(nums, val)) // Output: 5
 // (mutate) nums = [0,1,3,0,4]
 
-// ------------------------------------------
+// -----------------------------------------------
 
 // inefficient answer
 function removeElement__(nums, val) {
