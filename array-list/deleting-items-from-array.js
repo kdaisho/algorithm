@@ -30,7 +30,7 @@ function removeDuplicates(nums) {
   })
 
   nums.splice(_i)
-  return nums.length
+  return nums.length // or return _i
 }
 
 // Usage
@@ -42,3 +42,22 @@ console.log(removeDuplicates(nums)) // output: 2
 const nums2 = [1, 1, 2, 3, 4, 4, 4, 4, 5]
 console.log(removeDuplicates(nums2)) // output: 5
 // (mutate) nums2 = [1,2,3,4,5]
+
+// Without using hash-set
+function removeDuplicates2(nums) {
+  let writePointer = 1
+
+  for (let i = 1; i < nums.length; i++) {
+    if (nums[i] !== nums[i - 1]) {
+      nums[writePointer] = nums[i]
+      writePointer++
+    }
+  }
+
+  return writePointer
+}
+
+// Usage ver 2
+
+const nums3 = [1, 1, 2]
+console.log(removeDuplicates(nums3)) // output: 2
