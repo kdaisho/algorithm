@@ -26,13 +26,13 @@ const list = [
   {
     id: 5,
     name: 'Louis',
-    title: 'tester',
+    title: 'Tester',
     connections: [3, 4, 5],
   },
   {
     id: 6,
     name: 'Bob',
-    title: 'tester',
+    title: 'Tester',
     connections: [6],
   },
 ]
