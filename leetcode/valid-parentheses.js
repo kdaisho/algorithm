@@ -71,6 +71,9 @@ console.log(isValid(s2)) // true
 const s3 = '{[])({}}'
 console.log(isValid(s3)) // false
 
+const s4 = '([{}])'
+console.log(isValid(s4)) // true
+
 // First attempt
 function _isValid(s) {
   if (s.length % 2 !== 0) return false
@@ -93,10 +96,13 @@ function _isValid(s) {
 
 // Usage
 const _s1 = '{[]}'
-console.log(isValid(_s1)) // true
+console.log(_isValid(_s1)) // true
 
 const _s2 = '{[](){}}'
-console.log(isValid(_s2)) // true
+console.log(_isValid(_s2)) // true
 
 const _s3 = '{[])({}}'
-console.log(isValid(_s3)) // false
+console.log(_isValid(_s3)) // false
+
+const _s4 = '([{}])'
+console.log(_isValid(_s4)) // true
